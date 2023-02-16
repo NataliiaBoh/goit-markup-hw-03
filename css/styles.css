@@ -1,0 +1,110 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --primary-white-color:#fff;
+}
+/* основний колір #434455 */
+/* другорядний колір #2E2F42 */
+/* білий #FFFFFF */
+/* акцент #4D5AE5 */
+/* акцент фон #404BBF */
+
+.list {
+  list-style: none;  
+}
+.body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* header */
+.logo {
+    color: var(--title-text-color);
+    font-family: raleway;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.accent {
+    color: var(--accent-color);
+}
+.nav-link .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-link .link:hover, .nav-link .link:focus {
+    color: #404BBF;
+}
+.nav-link .link.current {
+    color: var(--accent-color);
+}
+.address .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.address .link:hover, .address .link:focus {
+    color: #404BBF;
+}
+/* hero*/
+.hero {
+    background-color: var(--title-text-color);
+}
+.hero-title {
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.43;
+    text-align: center;
+}
+.hero .button {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    letter-spacing: 0.04em;
+    }
+/* main */
+.section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+}
+.about-list .title, .team-list .title, .portfolio-list .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.team-section {
+    background-color: #F4F4FD;
+}
+.footer {
+    background-color: var(--title-text-color) ;
+    color: #E7E9FC;
+}
+.footer .logo {
+    color: var(--primary-white-color);
+}
+.list .button {
+    background-color: #F4F4FD;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--accent-color);
+}
+.list .button:hover, .list .button:focus {
+    background-color: #404BBF;
+    color: var(--primary-white-color);
+}

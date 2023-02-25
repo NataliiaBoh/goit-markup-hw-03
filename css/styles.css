@@ -11,6 +11,10 @@
 /* акцент фон #404BBF */
 
 .list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
   list-style: none;  
 }
 .body {
@@ -20,6 +24,13 @@
     letter-spacing: 0.02em;
     font-size: 16px;
     line-height: 1.5;
+   
+}
+.conteiner {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 /* header */
 .logo {
@@ -34,6 +45,24 @@
 .accent {
     color: var(--accent-color);
 }
+.main-nav { 
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    height: 72px;
+}
+.nav {
+    display: flex;
+}
+.nav-link {
+    display: flex;
+    margin-left: 76px;
+}
+.nav-link li + li{
+    margin-left: 40px;
+
+}
+
 .nav-link .link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -45,7 +74,17 @@
 .nav-link .link.current {
     color: var(--accent-color);
 }
+
+
+.address li + li {
+    margin-left: 40px;
+}
+.address {
+    display: flex;
+    margin-left: auto;
+}
 .address .link {
+   
     color: var(--primary-text-color);
     text-decoration: none;
 }
@@ -55,15 +94,26 @@
 /* hero*/
 .hero {
     background-color: var(--title-text-color);
+    text-align: center;
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 48;
+
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.43;
-    text-align: center;
+   
 }
 .hero .button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: 1px solid transparent;
+
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     font-weight: 500;
@@ -73,26 +123,99 @@
     }
 /* main */
 .section-title {
+    height: 70px;
+    margin-top: 0;
+    margin-bottom: 72;
+    
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
+}
+.title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.about-title {
+    display: none;
+}
+.about-list {
+    display: flex;
+    margin-top: 103px;
+    margin-bottom: 120px;
+}
+.about-list li + li {
+    margin-left: 24px;
+}
+.about-list p, .team-list p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .about-list .title, .team-list .title, .portfolio-list .title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
+.doing-list {
+    display: flex;
+}
+.doing-list li + li{
+    margin-left: 24px;
+}
 
 .team-section {
+
     background-color: #F4F4FD;
 }
+.team-title{
+    padding-top: 120px;
+    margin-bottom: 72px;
+}
+.team-list{
+    display: flex;
+    padding-bottom: 120px;
+}
+.team-list li + li, .portfolio-nav li + li {
+    margin-left: 24px;
+}
+
+.portfolio-title {
+    display: none;
+}
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    padding-top: 96px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 96px;
+   
+
+}
+.portfolio-element {
+     margin-right: 24px;
+}
+.portfolio-element:nth-child(3n) {
+    margin-right: 0;
+}
+
 .footer {
     background-color: var(--title-text-color) ;
     color: #E7E9FC;
 }
 .footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding-top: 100px;
     color: var(--primary-white-color);
+}
+.footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 100px;
 }
 .list .button {
     background-color: #F4F4FD;

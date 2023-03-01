@@ -36,6 +36,7 @@
 .header {
     border-bottom: 1px;
     padding: 24px 0;
+    border: 1px solid #E7E9FC;
 }
 .logo {
     color: var(--title-text-color);
@@ -145,6 +146,9 @@
     margin-top: 0;
     margin-bottom: 8px;
 }
+.about {
+    padding-bottom:  0;
+}
 .about-title {
     display: none;
 }
@@ -164,8 +168,9 @@
     font-size: 20px;
     line-height: 1.2;
 }
-.about-elemen {
-    width: 264 px;
+.about-element {
+    width: 264px;
+
 }
 .doing-list {
     display: flex;
@@ -188,9 +193,23 @@
 .team-list li + li, .portfolio-nav li + li {
     margin-left: 24px;
 }
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .list-element {
     text-align: center;
+    background-color: var(--primary-white-color);
     padding: 32px 0;
+    border-radius: 4px;
+}
+
+/*portfolio*/
+
+.portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -200,22 +219,31 @@
     display: flex;
     justify-content: center;
     margin-bottom: 72px;
-    padding-top: 96px;
+}
+.portfolio-nav .button {
+    border-radius: 4px;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 96px;
-   
+    gap: 48px 24px; 
 
 }
 .portfolio-element {
-     margin-right: 24px;
-}
+     border: 1px solid #E7E9FC ;
+     flex-basis: calc((100% - 48px) / 3);
+    }
+
 .portfolio-element:nth-child(3n) {
     margin-right: 0;
 }
+.div-element {
+    background-color: var(--primary-white-color);
+    padding: 32px 0;
+    padding-left: 16px;
+}
 
+/*footer*/
 .footer {
     background-color: var(--title-text-color) ;
     color: #E7E9FC;
